@@ -41,26 +41,6 @@ class RleDecode:
                 count = ''
         return decode
 
-def encode(input, output):
-    input = open(input, 'r')
-    output = open(output, 'w')
-    for i in input.readlines():
-        val = RleEncode(i)
-        output.write(val.rle_encode())
-    input.close()
-    output.close()
-
-def decode(input, output):
-    input = open(input, 'r')
-    output = open(output, 'w')
-    for i in input.readlines():
-        val = RleDecode(i)
-        output.write(val.rle_decode())
-    input.close()
-    output.close()
-
-
-
 
 class FileReader:
     def __init__(self, input, output):
