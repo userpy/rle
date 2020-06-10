@@ -3,18 +3,27 @@
 
 `chmod +x  ./Run-lenth-encoding.py`
 
-_encode text_
+***
 
-**input**
-`./Run-lenth-encoding.py --data HELLOOOOOUUUUUUU -encode`
+**run command encode text in file**
+`./Run-lenth-encoding.py -i inputfile -o outputfile -encode`
 
-**output**
-`1H1E2L5O7U`
+_**input**`aaaaaaa
+fffff
+ttttt`**to output**`7a1
+5f1
+5t`_
 
-_decode text_
 
-**input**
-`./Run-lenth-encoding.py --data 1H1E2L5O7U -decode`
 
-**output**
-`HELLOOOOOUUUUUUU`
+***
+
+**run command decode text in file**
+`./Run-lenth-encoding.py -i inputfile -o outputfile  -decode`
+
+_`7a1
+5f1
+5t`**to**`aaaaaaa
+fffff
+ttttt`_
+
